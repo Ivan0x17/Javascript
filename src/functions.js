@@ -1,4 +1,4 @@
-pythontutor 
+//pythontutor 
 
 var Word = 65535
 var DWord = 4294967295
@@ -30,6 +30,27 @@ function BytetoBit(Byte){
   }
   return Bit
 }
+
+//////////////////////////////////////////////////////////
+
+var all = 4294967295
+
+
+
+function allToBit(all){
+
+var boolean = all.toString(2)
+var array = []
+
+for(var i=0;i<boolean.length;i++){
+  array[i] = boolean.split("")[i]
+  }
+return array
+}
+
+var prova = allToBit(all)
+
+//////////////////////////////////////////////////////////
 
 var prova = WordtoBit(Word);
 console.log(prova);
