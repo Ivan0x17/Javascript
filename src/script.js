@@ -54,3 +54,20 @@ var prova = allToBit(all)
 
 var prova = WordtoBit(Word);
 console.log(prova);
+
+//////////////////////////////////////////////////////////
+// Get data
+
+function GetTime(){
+    var Time = new Date()
+    var [Seconds,Minutes,Hours,Day,Months,years] = [Time.getSeconds(),Time.getMinutes(),Time.getHours(),Time.getDay(),Time.getMonth(),Time.getFullYear()]
+    var jsonTime = {
+        "Seconds":Seconds,
+        "Minutes":Minutes,
+        "Hours":Hours,
+        "Day":Day,
+        "Months":Months,
+        "years":years
+    }
+    return jsonTime
+}
